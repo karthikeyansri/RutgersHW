@@ -34,8 +34,17 @@ Sub e_m_h()
         Debug.Print (ws_name)
         Debug.Print ("Rows: " + Str(NumRows))
         
-        ' Can be used to sort by ticker symbol. Must add some code piece that will allow to group by tcker and sort by Date. will suit this application 100%
-        ' ws.Range("A1").CurrentRegion.Sort Key1:=ws.Range("A1"), order1:=xlAscending, Header:=xlYes
+        ' The following code will sort the excelsheet first by ticker symbol and then by date in ascending order.
+        ' The code that follows (calculating % chage in price, total volume, maximum and minimum of % change
+        ' and maximum of  volume traded in a year) assumes that the tickers are gruped together and sorted by date field.
+        ' The sorting performs grouping the tickers together and soting the grouped tickers by date
+        With ActiveSheet.Sort
+            .SortFields.Add Key:=Range("A1"), Order:=xlAscending
+            .SortFields.Add Key:=Range("B1"), Order:=xlAscending
+            .SetRange Range("A:G")
+            .Header = xlYes
+            .Apply
+        End With
         
         For Row = 1 To NumRows
             If (ws.Cells(Row, 1).Value <> "<ticker>") Then
@@ -43,7 +52,6 @@ Sub e_m_h()
                     
                     ' Update the excel with the ticker stats obtained so far
                     If ((current_ticker_symbol <> "")) Then
-                        ' Debug.Print (Str(Row))
                         
                         ''' Calculation START
                         If (Row = NumRows) Then
@@ -117,12 +125,12 @@ Sub e_m_h()
         Next Row
         
         Debug.Print ("ticker_count: " + Str(ticker_count))
-        Debug.Print ("==================================")
         
         set_big_tickers p_big_tickers:=big_tickers, p_big_percent_yearly_change:=big_percent_yearly_change, p_big_ticker_volume:=big_ticker_volume, p_ws_name:=ws_name
         Debug.Print ("Ticker: " + big_tickers(0) + "; Greatest % increase: " + Str(big_percent_yearly_change(0)))
         Debug.Print ("Ticker: " + big_tickers(1) + "; Greatest % decrease: " + Str(big_percent_yearly_change(1)))
         Debug.Print ("Ticker: " + big_tickers(2) + "; Greatest Volume: " + Str(big_ticker_volume))
+        Debug.Print ("============================================================================")
         
     Next ws
     
@@ -160,3 +168,4 @@ Sub set_big_tickers(p_big_tickers() As String, p_big_percent_yearly_change() As 
     ws.Range("P4") = p_big_tickers(2)
     ws.Range("Q4") = p_big_ticker_volume
 End Sub
+
