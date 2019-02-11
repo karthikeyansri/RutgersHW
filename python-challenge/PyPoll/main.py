@@ -71,6 +71,7 @@ def get_std_result_str(rec_dict, rec_len):
     winner_str = ''
     
     out_str = ''
+    out_str = out_str + '\n' + get_line_str()
     out_str = out_str + '\n' + 'Election Results'
     out_str = out_str + '\n' + get_line_str()
     out_str = out_str + '\n' + 'Total Votes: ' + str(rec_len)
@@ -98,6 +99,7 @@ def get_extended_result_str(rec_dict, total_votes):
     
     counties = {}
     out_str = '' + '\n\n\n'
+    out_str = out_str + '\n' + get_line_str()
     out_str = out_str + '\n' + 'County-Wise election results'
     out_str = out_str + '\n' + get_line_str()
 
