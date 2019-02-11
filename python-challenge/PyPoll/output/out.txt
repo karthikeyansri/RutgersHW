@@ -1,0 +1,71 @@
+
+Election Results
+--------------------------------------------------------------
+Total Votes: 3521001
+--------------------------------------------------------------
+Khan: 63.0% (2218231)
+Correy: 20.0% (704200)
+Li: 14.0% (492940)
+O'Tooley: 3.0% (105630)
+--------------------------------------------------------------
+Winner: Khan
+--------------------------------------------------------------
+
+
+
+County-Wise election results
+--------------------------------------------------------------
+Polled votes in Marsh county: 2265957; (64.355% of total votes polled)
+--------------------------------------------------------------
+Khan -- Vote Percentage: 62.982% -- Votes: 1427142
+Correy -- Vote Percentage: 19.992% -- Votes: 453015
+Li -- Vote Percentage: 14.018% -- Votes: 317651
+O'Tooley -- Vote Percentage: 3.008% -- Votes: 68149
+
+--------------------------------------------------------------
+Winner in Marsh: Khan
+--------------------------------------------------------------
+
+Polled votes in Queen county: 697203; (19.801% of total votes polled)
+--------------------------------------------------------------
+Khan -- Vote Percentage: 63.037% -- Votes: 439494
+Correy -- Vote Percentage: 20.016% -- Votes: 139554
+O'Tooley -- Vote Percentage: 2.991% -- Votes: 20850
+Li -- Vote Percentage: 13.956% -- Votes: 97305
+
+--------------------------------------------------------------
+Winner in Queen: Khan
+--------------------------------------------------------------
+
+Polled votes in Bamoo county: 348658; (9.902% of total votes polled)
+--------------------------------------------------------------
+Correy -- Vote Percentage: 20.006% -- Votes: 69752
+O'Tooley -- Vote Percentage: 2.992% -- Votes: 10433
+Li -- Vote Percentage: 13.95% -- Votes: 48639
+Khan -- Vote Percentage: 63.051% -- Votes: 219834
+
+--------------------------------------------------------------
+Winner in Bamoo: Khan
+--------------------------------------------------------------
+
+Polled votes in Trandee county: 104617; (2.971% of total votes polled)
+--------------------------------------------------------------
+Khan -- Vote Percentage: 63.029% -- Votes: 65939
+Correy -- Vote Percentage: 19.905% -- Votes: 20824
+Li -- Vote Percentage: 14.09% -- Votes: 14741
+O'Tooley -- Vote Percentage: 2.976% -- Votes: 3113
+
+--------------------------------------------------------------
+Winner in Trandee: Khan
+--------------------------------------------------------------
+
+Polled votes in Raffah county: 104566; (2.97% of total votes polled)
+--------------------------------------------------------------
+Khan -- Vote Percentage: 62.948% -- Votes: 65822
+Li -- Vote Percentage: 13.966% -- Votes: 14604
+Correy -- Vote Percentage: 20.136% -- Votes: 21055
+O'Tooley -- Vote Percentage: 2.95% -- Votes: 3085
+
+--------------------------------------------------------------
+Winner in Raffah: Khan
+--------------------------------------------------------------
