@@ -580,7 +580,7 @@ age_data_summary['Avg Total Purchase per Person'] = age_data_summary['Total Purc
 
 age_data_summary['Total Purchase Value'] = age_data_summary['Total Purchase Value'].apply(lambda x: '${:,.2f}'.format(x))
 age_data_summary['Average Purchase Price'] = age_data_summary['Average Purchase Price'].apply(lambda x: '${:,.2f}'.format(x))
-age_data_summary['Avg Total Purchase per Person'] = age_data_summary['Avg Total Purchase per Person'].apply(lambda x: '{:,.2f}%'.format(x))
+age_data_summary['Avg Total Purchase per Person'] = age_data_summary['Avg Total Purchase per Person'].apply(lambda x: '${:,.2f}'.format(x))
 
 age_data_summary
 ```
@@ -628,7 +628,7 @@ age_data_summary
       <td>$77.13</td>
       <td>$3.35</td>
       <td>17</td>
-      <td>4.54%</td>
+      <td>$4.54</td>
     </tr>
     <tr>
       <th>10-14</th>
@@ -636,7 +636,7 @@ age_data_summary
       <td>$82.78</td>
       <td>$2.96</td>
       <td>22</td>
-      <td>3.76%</td>
+      <td>$3.76</td>
     </tr>
     <tr>
       <th>15-19</th>
@@ -644,7 +644,7 @@ age_data_summary
       <td>$412.89</td>
       <td>$3.04</td>
       <td>107</td>
-      <td>3.86%</td>
+      <td>$3.86</td>
     </tr>
     <tr>
       <th>20-24</th>
@@ -652,7 +652,7 @@ age_data_summary
       <td>$1,114.06</td>
       <td>$3.05</td>
       <td>258</td>
-      <td>4.32%</td>
+      <td>$4.32</td>
     </tr>
     <tr>
       <th>25-29</th>
@@ -660,7 +660,7 @@ age_data_summary
       <td>$293.00</td>
       <td>$2.90</td>
       <td>77</td>
-      <td>3.81%</td>
+      <td>$3.81</td>
     </tr>
     <tr>
       <th>30-34</th>
@@ -668,7 +668,7 @@ age_data_summary
       <td>$214.00</td>
       <td>$2.93</td>
       <td>52</td>
-      <td>4.12%</td>
+      <td>$4.12</td>
     </tr>
     <tr>
       <th>35-39</th>
@@ -676,7 +676,7 @@ age_data_summary
       <td>$147.67</td>
       <td>$3.60</td>
       <td>31</td>
-      <td>4.76%</td>
+      <td>$4.76</td>
     </tr>
     <tr>
       <th>40+</th>
@@ -684,7 +684,7 @@ age_data_summary
       <td>$38.24</td>
       <td>$2.94</td>
       <td>12</td>
-      <td>3.19%</td>
+      <td>$3.19</td>
     </tr>
   </tbody>
 </table>
