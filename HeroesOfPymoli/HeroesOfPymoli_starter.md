@@ -279,8 +279,8 @@ demographic_summary = { 'Total Count': [male_customer_count, female_customer_cou
                                                   '{:,.2f}%'.format(100 * oth_gen_customer_count/total_customer_count)]
                        }
 demographic_summary = pd.DataFrame(demographic_summary, 
-                                   index = {'Male','Female','Other / Non-Disclosed'}, 
-                                   columns = demographic_summary.keys())
+                                   index = ['Male','Female','Other / Non-Disclosed'], 
+                                   columns = ['Total Count', 'Percentage of Players'])
 
 demographic_summary
 ```
@@ -317,12 +317,12 @@ demographic_summary
       <td>84.03%</td>
     </tr>
     <tr>
-      <th>Other / Non-Disclosed</th>
+      <th>Female</th>
       <td>81</td>
       <td>14.06%</td>
     </tr>
     <tr>
-      <th>Female</th>
+      <th>Other / Non-Disclosed</th>
       <td>11</td>
       <td>1.91%</td>
     </tr>
@@ -578,8 +578,8 @@ age_data_summary.rename(columns = {'SN_x': 'Purchase Count',
 
 age_data_summary['Avg Total Purchase per Person'] = age_data_summary['Total Purchase Value']/age_data_summary['Number of Unique purchasers']
 
-age_data_summary['Total Purchase Value'] = age_data_summary['Total Purchase Value'].apply(lambda x: '{:,.2f}%'.format(x))
-age_data_summary['Average Purchase Price'] = age_data_summary['Average Purchase Price'].apply(lambda x: '{:,.2f}%'.format(x))
+age_data_summary['Total Purchase Value'] = age_data_summary['Total Purchase Value'].apply(lambda x: '${:,.2f}'.format(x))
+age_data_summary['Average Purchase Price'] = age_data_summary['Average Purchase Price'].apply(lambda x: '${:,.2f}'.format(x))
 age_data_summary['Avg Total Purchase per Person'] = age_data_summary['Avg Total Purchase per Person'].apply(lambda x: '{:,.2f}%'.format(x))
 
 age_data_summary
@@ -625,64 +625,64 @@ age_data_summary
     <tr>
       <th>&lt;10</th>
       <td>23</td>
-      <td>77.13%</td>
-      <td>3.35%</td>
+      <td>$77.13</td>
+      <td>$3.35</td>
       <td>17</td>
       <td>4.54%</td>
     </tr>
     <tr>
       <th>10-14</th>
       <td>28</td>
-      <td>82.78%</td>
-      <td>2.96%</td>
+      <td>$82.78</td>
+      <td>$2.96</td>
       <td>22</td>
       <td>3.76%</td>
     </tr>
     <tr>
       <th>15-19</th>
       <td>136</td>
-      <td>412.89%</td>
-      <td>3.04%</td>
+      <td>$412.89</td>
+      <td>$3.04</td>
       <td>107</td>
       <td>3.86%</td>
     </tr>
     <tr>
       <th>20-24</th>
       <td>365</td>
-      <td>1,114.06%</td>
-      <td>3.05%</td>
+      <td>$1,114.06</td>
+      <td>$3.05</td>
       <td>258</td>
       <td>4.32%</td>
     </tr>
     <tr>
       <th>25-29</th>
       <td>101</td>
-      <td>293.00%</td>
-      <td>2.90%</td>
+      <td>$293.00</td>
+      <td>$2.90</td>
       <td>77</td>
       <td>3.81%</td>
     </tr>
     <tr>
       <th>30-34</th>
       <td>73</td>
-      <td>214.00%</td>
-      <td>2.93%</td>
+      <td>$214.00</td>
+      <td>$2.93</td>
       <td>52</td>
       <td>4.12%</td>
     </tr>
     <tr>
       <th>35-39</th>
       <td>41</td>
-      <td>147.67%</td>
-      <td>3.60%</td>
+      <td>$147.67</td>
+      <td>$3.60</td>
       <td>31</td>
       <td>4.76%</td>
     </tr>
     <tr>
       <th>40+</th>
       <td>13</td>
-      <td>38.24%</td>
-      <td>2.94%</td>
+      <td>$38.24</td>
+      <td>$2.94</td>
       <td>12</td>
       <td>3.19%</td>
     </tr>
